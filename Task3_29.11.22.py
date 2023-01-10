@@ -1,10 +1,10 @@
-any_dig = (input('Введіть число відмінне від "0": '))
+any_dig = (input('Введіть ціле число: '))
 try:
     any_digit = int(any_dig)
 except:
-    print('Не є числом')
+    print('Не є цілим числом')
     quit()
-if any_digit == 0 or any_digit == 1:
+if any_digit <= 1:
     print('Не відноситься ні до простих ні до складених чисел')
     quit()
 n = 1
