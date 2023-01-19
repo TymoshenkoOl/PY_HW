@@ -3,10 +3,9 @@ def qwerty(my_list):
     for i in my_list[n:(len(my_list) + 1)]:
         if n % 2 == 0:
             new_list.append(i[::-1])
-            n += 1
         else:
             new_list.append(i)
-            n += 1
+            n += 2
     return new_list
 
 
